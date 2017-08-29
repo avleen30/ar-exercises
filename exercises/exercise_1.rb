@@ -2,8 +2,6 @@ require_relative '../setup'
 
 puts "Exercise 1"
 puts "----------"
-#Use Active Record's create class method multiple times to create 3 stores in the database:
-
 
 # Your code goes below here ...
 # Your code goes below here ...Burnaby (annual_revenue of 300000, carries men's and women's apparel)
@@ -14,9 +12,6 @@ puts "----------"
 Store.create(name: "Burnaby", annual_revenue: "300000", mens_apparel: true, womens_apparel: true)
 Store.create(name: "Richmond", annual_revenue: "1260000", mens_apparel: false, womens_apparel: true)
 Store.create(name: "Gastown", annual_revenue: "190000", mens_apparel: true, womens_apparel: false)
-
-#Output (puts) the number of the stores using ActiveRecord's count method,
-#to ensure that there are three stores in the database.
 
 puts Store.count
 
